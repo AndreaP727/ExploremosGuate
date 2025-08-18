@@ -1,0 +1,33 @@
+.navbar-custom {
+  background-color: #033f63 !important;
+  height: 56px; /* altura fija del navbar */
+}
+
+.logo-navbar {
+  height: 120px; /* más alto que el navbar */
+  width: auto;
+  object-fit: contain;
+  margin-top: -12px;  /* sube el logo */
+  margin-bottom: -12px; /* baja el logo */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
+#mi_mapa {
+    height: 650px;
+    width: 900px;
+    display: block;
+    margin-top: 20px;
+     margin: 20px auto;
+}
+
+.titulo_mapa h2{
+  font-size: 45px;
+  color: #033f63;   /* color azul del navbar */
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}

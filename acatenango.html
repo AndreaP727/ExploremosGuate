@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="acatenango.css">
+      <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="ExploremosGuatelogo.png" alt="Logo" class="logo-navbar">
+  </a>
+
+    <!-- Botón Responsive -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTurismo" aria-controls="navbarTurismo" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú -->
+    <div class="collapse navbar-collapse" id="navbarTurismo">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+        <!-- Inicio -->
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+
+        <!-- Aventura -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aventuraDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Aventura
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="aventuraDropdown">
+            <li><a class="dropdown-item" href="acatenango.html">Volcán Acatenango</a></li>
+            <li><a class="dropdown-item" href="#">Volcán Pacaya</a></li>
+            <li><a class="dropdown-item" href="#">Parapente en Atitlán</a></li>
+            <li><a class="dropdown-item" href="#">Rafting Río Cahabón</a></li>
+            <li><a class="dropdown-item" href="#">Grutas del Rey Marcos</a></li>
+          </ul>
+        </li>
+
+        <!-- Cultural -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="culturalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cultural
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="culturalDropdown">
+            <li><a class="dropdown-item" href="#">Antigua Guatemala</a></li>
+            <li><a class="dropdown-item" href="#">Tikal</a></li>
+            <li><a class="dropdown-item" href="#">El Mirador</a></li>
+            <li><a class="dropdown-item" href="#">Quiriguá</a></li>
+            <li><a class="dropdown-item" href="#">Livingston</a></li>
+          </ul>
+        </li>
+
+        <!-- Naturaleza -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="naturalezaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Naturaleza
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="naturalezaDropdown">
+            <li><a class="dropdown-item" href="#">Semuc Champey</a></li>
+            <li><a class="dropdown-item" href="#">Laguna Lachuá</a></li>
+            <li><a class="dropdown-item" href="#">Cráter Azul</a></li>
+            <li><a class="dropdown-item" href="#">Laguna Magdalena</a></li>
+            <li><a class="dropdown-item" href="#">Chilascó</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Buscador -->
+      <form id="form-buscador" class="d-flex" role="search">
+  <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar destino..." aria-label="Search">
+  <button class="btn btn-outline-light" type="submit">Buscar</button>
+</form>
+    </div>
+  </div>
+</nav>
+    <section>
+    <div class="container">
+        <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1">
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <ul class="carousel__slides">
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="Fotos/Acatenango1.jpg" alt="">
+                        </div>
+                        
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="Fotos/Acatenango2.jpg" alt="">
+                        </div>
+                      
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src="Fotos/Acatenango3.jpg" alt="">
+                        </div>
+                     
+                    </figure>
+                </li>
+                <li class="carousel__slide">
+                    
+                </li>
+            </ul>    
+            <ul class="carousel__thumbnails">
+                <li>
+                    <label for="slide-1"><img src="Fotos/Acatenango1.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-2"><img src="Fotos/Acatenango2.jpg" alt=""></label>
+                </li>
+                <li>
+                    <label for="slide-3"><img src="Fotos/Acatenango3.jpg" alt=""></label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="destino" data-id="acatenango">
+    <div class="stars" data-puntuacion="0">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="info-rating"></span>
+    </div>
+  </div>
+<section class="info-destino">
+  <h2>VOLCÁN ACATENANGO</h2>
+  <ul class="detalles-destino">
+    <li><strong>Ubicación:</strong> Chimaltenango y Sacatepéquez</li>
+    <li><strong>Tiempo de ascenso:</strong> 6 horas</li>
+    <li><strong>Tiempo de descenso:</strong> 3 horas</li>
+    <li><strong>Altitud:</strong> 3976 msnm</li>
+    <li><strong>Entrada nacional:</strong> Q25</li>
+    <li><strong>Entrada extranjero:</strong> Q50</li>
+  </ul>
+
+  <h4>Descripción</h4>
+  <p>
+    El Acatenango es un estratovolcán de Guatemala, el tercer volcán más alto del país, Acatenango se encuentra unido al volcán de Fuego, y la unión de ambos, es conocida como «La Horqueta»; de hecho, el macizo de Fuego-Acatenango comprende una cadena montañosa de cinco o más volcanes de dirección norte-sur en forma perpendicular al arco centroamericano de Guatemala. El macizo Fuego-Acatenango era originalmente referido por los colonos españoles como «los volcanes de Fuego».
+
+El volcanismo en esta región se extiende por más de 200 000 años. Muchos de los cuales entran en actividad constantemente.
+  </p>
+  <h5> ¿Comó llegar?</h5>
+  <div class="mapa-google">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15450.900651352118!2d-90.88596593623782!3d14.500460525584213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858917a5046cfc49%3A0x2d5b1ab999738383!2sVolcan%20de%20Acatenango!5e0!3m2!1ses-419!2sgt!4v1754969326263!5m2!1ses-419!2sgt" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+    </div>
+</section>
+</section>
+</section>
+<script src="destinos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
