@@ -107,3 +107,60 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const climaDiv = document.getElementById("clima");
+    const destinoSelect = document.getElementById("destino");
+
+    destinoSelect.addEventListener("change", () => {
+      const valor = destinoSelect.value;
+
+      if (valor) {
+        const [lat, lon] = valor.split(",");
+
+        // Pedimos clima actual + pronóstico de 7 días
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto`;
+
+        climaDiv.innerHTML = "Cargando clima...";
+
+        fetch(url)
+          .then(res => res.json())
+          .then(data => {
+            const clima = data.current_weather;
+
+            // Datos de pronóstico diario
+            const dias = data.daily.time;
+            const tempMax = data.daily.temperature_2m_max;
+            const tempMin = data.daily.temperature_2m_min;
+            const lluvia = data.daily.precipitation_probability_max;
+
+            // Construimos pronóstico para 3 días
+            let pronosticoHTML = "<h4>Pronóstico próximos 3 días:</h4><ul>";
+            for (let i = 0; i < 3; i++) {
+              pronosticoHTML += `
+                <li>
+                  📅 ${dias[i]}<br>
+                  🌡️ Máx: ${tempMax[i]}°C | Mín: ${tempMin[i]}°C<br>
+                  🌧️ Lluvia: ${lluvia[i]}%
+                </li>
+              `;
+            }
+            pronosticoHTML += "</ul>";
+
+            climaDiv.innerHTML = `
+              <h3>${destinoSelect.options[destinoSelect.selectedIndex].text}</h3>
+              <p><b>Clima actual</b></p>
+              <p>🌡️ Temperatura: ${clima.temperature} °C</p>
+              <p>💨 Viento: ${clima.windspeed} km/h</p>
+              ${pronosticoHTML}
+            `;
+          })
+          .catch(err => {
+            climaDiv.innerText = "Error al obtener el clima.";
+            console.error(err);
+          });
+      } else {
+        climaDiv.innerHTML = "Selecciona un destino para ver el clima.";
+      }
+    });
+
+    

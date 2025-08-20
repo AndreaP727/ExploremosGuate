@@ -88,7 +88,22 @@
 <div class="titulo_mapa">
 <h2>Encuentra tu próximo destino </h2>
 </div>
-<div id="mi_mapa">
+<div id="mi_mapa"> </div>
+<h2>Consulta el clima en destinos turísticos</h2>
+
+  <!-- Menú de selección de destinos -->
+  <label for="destino">Elige un destino:</label>
+  <select id="destino">
+    <option value="">-- Selecciona --</option>
+    <option value="14.5611,-90.7344">Antigua Guatemala</option>
+    <option value="14.4743,-90.8808">Volcán de Acatenango</option>
+    <option value="14.6928,-91.2021">Lago de Atitlán</option>
+    <option value="17.1619,-89.8965">Tikal</option>
+    <option value="15.4745,-90.3700">Semuc Champey</option>
+  </select>
+
+  <div id="clima" style="margin-top:20px; font-size:18px;">
+    Selecciona un destino para ver el clima.
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="inicio.js"></script>
