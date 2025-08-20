@@ -1,168 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="destinos.css">
-      <!-- Bootstrap CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="destinos.css">
+  <link rel="stylesheet" href="boton.css">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-  <div class="container-fluid">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
-  <img src="ExploremosGuatelogo.png" alt="Logo" class="logo-navbar">
-  </a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="ExploremosGuatelogo.png" alt="Logo" class="logo-navbar">
+      </a>
 
-    <!-- Botón Responsive -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTurismo" aria-controls="navbarTurismo" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Botón Responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTurismo"
+        aria-controls="navbarTurismo" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Menú -->
-    <div class="collapse navbar-collapse" id="navbarTurismo">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <!-- Inicio -->
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-        </li>
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarTurismo">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <!-- Aventura -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aventuraDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Aventura
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="aventuraDropdown">
-            <li><a class="dropdown-item" href="acatenango.html">Volcán Acatenango</a></li>
-            <li><a class="dropdown-item" href="pacaya.html">Volcán Pacaya</a></li>
-            <li><a class="dropdown-item" href="parapente.html">Parapente en Atitlán</a></li>
-            <li><a class="dropdown-item" href="raffting.html">Rafting Río Cahabón</a></li>
-            <li><a class="dropdown-item" href="grutas.html">Grutas del Rey Marcos</a></li>
-          </ul>
-        </li>
+          <!-- Inicio -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
 
-        <!-- Cultural -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="culturalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cultural
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="culturalDropdown">
-            <li><a class="dropdown-item" href="antigua.html">Antigua Guatemala</a></li>
-            <li><a class="dropdown-item" href="tikal.html">Tikal</a></li>
-            <li><a class="dropdown-item" href="mirador.html">El Mirador</a></li>
-            <li><a class="dropdown-item" href="quirigua.html">Quiriguá</a></li>
-            <li><a class="dropdown-item" href="livingston.html">Livingston</a></li>
-          </ul>
-        </li>
-
-        <!-- Naturaleza -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="naturalezaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Naturaleza
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="naturalezaDropdown">
-            <li><a class="dropdown-item" href="semuc.html">Semuc Champey</a></li>
-            <li><a class="dropdown-item" href="lachua.html">Laguna Lachuá</a></li>
-            <li><a class="dropdown-item" href="crater.html">Cráter Azul</a></li>
-            <li><a class="dropdown-item" href="lagunamagdalena.html">Laguna Magdalena</a></li>
-            <li><a class="dropdown-item" href="chilasco.html">Chilascó</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <!-- Buscador -->
-      <form id="form-buscador" class="d-flex" role="search">
-  <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar destino..." aria-label="Search">
-  <button class="btn btn-outline-light" type="submit">Buscar</button>
-</form>
-    </div>
-  </div>
-</nav>
-    <section>
-    <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="fotos/semuc1.jpg" alt="">
-                        </div>
-                        
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="fotos/semuc2.jpg" alt="">
-                        </div>
-                      
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="fotos/Semuc3.jpg" alt="">
-                        </div>
-                     
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="fotos/semuc1.jpg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="fotos/semuc2.jpg" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="fotos/Semuc3.jpg" alt=""></label>
-                </li>
+          <!-- Aventura -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aventuraDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Aventura
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aventuraDropdown">
+              <li><a class="dropdown-item" href="acatenango.html">Volcán Acatenango</a></li>
+              <li><a class="dropdown-item" href="pacaya.html">Volcán Pacaya</a></li>
+              <li><a class="dropdown-item" href="parapente.html">Parapente en Atitlán</a></li>
+              <li><a class="dropdown-item" href="raffting.html">Rafting Río Cahabón</a></li>
+              <li><a class="dropdown-item" href="grutas.html">Grutas del Rey Marcos</a></li>
             </ul>
-        </div>
+          </li>
+
+          <!-- Cultural -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="culturalDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cultural
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="culturalDropdown">
+              <li><a class="dropdown-item" href="antigua.html">Antigua Guatemala</a></li>
+              <li><a class="dropdown-item" href="tikal.html">Tikal</a></li>
+              <li><a class="dropdown-item" href="mirador.html">El Mirador</a></li>
+              <li><a class="dropdown-item" href="quirigua.html">Quiriguá</a></li>
+              <li><a class="dropdown-item" href="livingston.html">Livingston</a></li>
+            </ul>
+          </li>
+
+          <!-- Naturaleza -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="naturalezaDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Naturaleza
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="naturalezaDropdown">
+              <li><a class="dropdown-item" href="semuc.html">Semuc Champey</a></li>
+              <li><a class="dropdown-item" href="lachua.html">Laguna Lachuá</a></li>
+              <li><a class="dropdown-item" href="crater.html">Cráter Azul</a></li>
+              <li><a class="dropdown-item" href="lagunamagdalena.html">Laguna Magdalena</a></li>
+              <li><a class="dropdown-item" href="chilasco.html">Chilascó</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Buscador -->
+        <form id="form-buscador" class="d-flex" role="search">
+          <input id="buscador" class="form-control me-2" type="search" placeholder="Buscar destino..."
+            aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="carousel">
+        <input type="radio" name="slides" checked="checked" id="slide-1">
+        <input type="radio" name="slides" id="slide-2">
+        <input type="radio" name="slides" id="slide-3">
+        <ul class="carousel__slides">
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="fotos/semuc1.jpg" alt="">
+              </div>
+
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="fotos/semuc2.jpg" alt="">
+              </div>
+
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="fotos/Semuc3.jpg" alt="">
+              </div>
+
+            </figure>
+          </li>
+          <li class="carousel__slide">
+
+          </li>
+        </ul>
+        <ul class="carousel__thumbnails">
+          <li>
+            <label for="slide-1"><img src="fotos/semuc1.jpg" alt=""></label>
+          </li>
+          <li>
+            <label for="slide-2"><img src="fotos/semuc2.jpg" alt=""></label>
+          </li>
+          <li>
+            <label for="slide-3"><img src="fotos/Semuc3.jpg" alt=""></label>
+          </li>
+        </ul>
+      </div>
     </div>
     </div>
     <div class="destino" data-id="semuc">
-    <div class="stars" data-puntuacion="0">
-      <span class="star">&#9733;</span>
-      <span class="star">&#9733;</span>
-      <span class="star">&#9733;</span>
-      <span class="star">&#9733;</span>
-      <span class="star">&#9733;</span>
-      <span class="info-rating"></span>
+      <div class="stars" data-puntuacion="0">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="info-rating"></span>
+      </div>
     </div>
-  </div>
-<section class="info-destino">
-  <h2>SEMUC CHAMPEY</h2>
-  <ul class="detalles-destino">
-    <li><strong>Ubicación:</strong> Lanquín, Alta Verapaz</li>
-    <li><strong>Tiempo de recorrido:</strong> 2 horas</li>
-    <li><strong>Entrada nacional:</strong> Q30</li>
-    <li><strong>Entrada extranjero:</strong> Q50</li>
-  </ul>
+    <section class="info-destino">
+      <h2>SEMUC CHAMPEY</h2>
+      <ul class="detalles-destino">
+        <li><strong>Ubicación:</strong> Lanquín, Alta Verapaz</li>
+        <li><strong>Tiempo de recorrido:</strong> 2 horas</li>
+        <li><strong>Entrada nacional:</strong> Q30</li>
+        <li><strong>Entrada extranjero:</strong> Q50</li>
+      </ul>
 
-  <h4>Descripción</h4>
-  <p>
-    Esta maravilla natural fue descubierta por el mundo hace muy poco y es uno de los paraísos casi intactos de los que se puede disfrutar en los viajes a Centroamérica. En 1950, las autoridades acudieron a la zona para socorrer a un hombre que había tenido un accidente de pesca y, al ver lo espectacular del entorno, notificaron al instituto de turismo y a los medios de comunicación la localización del que, desde aquél momento se convertiría en uno de los imprescindibles del turismo de aventura y los viajes alternativos en Guatemala.
-Una de las mejores vistas de esta maravilla natural se obtiene desde el mirador que se encuentra a unos 700 metros de altura, tras la visita al mirador, nada como comprobar cómo se siente bañarse en esas pozas de un turquesa casi imposible, es recomendable dar un tranquilo paseo por el río Cahabón para seguir comprobando que, sin duda, Semuc Champey es uno de los destinos paradisíacos imprescindibles en los viajes a Guatemala. Turismo, selva, aventura y ¡mucho más!
+      <h4>Descripción</h4>
+      <p>
+        Esta maravilla natural fue descubierta por el mundo hace muy poco y es uno de los paraísos casi intactos de los
+        que se puede disfrutar en los viajes a Centroamérica. En 1950, las autoridades acudieron a la zona para socorrer
+        a un hombre que había tenido un accidente de pesca y, al ver lo espectacular del entorno, notificaron al
+        instituto de turismo y a los medios de comunicación la localización del que, desde aquél momento se convertiría
+        en uno de los imprescindibles del turismo de aventura y los viajes alternativos en Guatemala.
+        Una de las mejores vistas de esta maravilla natural se obtiene desde el mirador que se encuentra a unos 700
+        metros de altura, tras la visita al mirador, nada como comprobar cómo se siente bañarse en esas pozas de un
+        turquesa casi imposible, es recomendable dar un tranquilo paseo por el río Cahabón para seguir comprobando que,
+        sin duda, Semuc Champey es uno de los destinos paradisíacos imprescindibles en los viajes a Guatemala. Turismo,
+        selva, aventura y ¡mucho más!
 
-  </p>
-  <h5> ¿Comó llegar?</h5>
-  <div class="mapa-google">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36570.33397876202!2d-89.96840304627666!3d15.539050427718637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f61d91cf913eec5%3A0xbfa54247d88988af!2sSemuc%20Champey!5e0!3m2!1ses-419!2sgt!4v1755574717192!5m2!1ses-419!2sgt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
-</section>
-</section>
-</section>
-<script src="destinos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </p>
+      <div class="boton-reserva">
+        <a href="tel:+50241028466" class="boton-llamada">Contacta a un guía local</a>
+      </div>
+      <h5> ¿Comó llegar?</h5>
+      <div class="mapa-google">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36570.33397876202!2d-89.96840304627666!3d15.539050427718637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f61d91cf913eec5%3A0xbfa54247d88988af!2sSemuc%20Champey!5e0!3m2!1ses-419!2sgt!4v1755574717192!5m2!1ses-419!2sgt"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </section>
+  </section>
+  <script src="destinos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
