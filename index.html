@@ -89,12 +89,10 @@
 <h2>Encuentra tu próximo destino </h2>
 </div>
 <div id="mi_mapa"> </div>
-<h2>Consulta el clima en destinos turísticos</h2>
-
-  <!-- Menú de selección de destinos -->
-  <label for="destino">Elige un destino:</label>
-  <select id="destino">
-
+<div id="clima-container" class="card p-3 mx-auto" style="max-width: 900px; margin-top: 30px;">
+  <!-- Selector de destino -->
+  <label for="destino" class="form-label fw-bold"> Selecciona un destino para ver el clima.</label>
+  <select id="destino" class="form-select mb-3">
     <option value="">-- Selecciona --</option>
     <option value="14.5611,-90.7344">Antigua Guatemala</option>
     <option value="14.4743,-90.8808">Volcán de Acatenango</option>
@@ -103,8 +101,10 @@
     <option value="15.4745,-90.3700">Semuc Champey</option>
   </select>
 
-  <div id="clima" style="margin-top:20px; font-size:18px;">
-    Selecciona un destino para ver el clima.
+  <!-- Bloque donde se mostrará el clima -->
+  <div id="clima" >
+  </div>
+</div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="inicio.js"></script>
