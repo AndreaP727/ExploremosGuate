@@ -108,6 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// clima con API OPEN METEO
 const climaDiv = document.getElementById("clima");
     const destinoSelect = document.getElementById("destino");
 
