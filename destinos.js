@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "quirigua": "quirigua.html",
     "livingston": "quirigua.html",
     "semuc champey": "semuc.html",
-    "laguna lachuá": "semuc.html",
+    "laguna lachuá": "lachua.html",
+    "lachua": "lachua.html",
     "cráter azul": "crater.html",
     "laguna magdalena": "lagunamagdalena.html",
     "chilascó": "chilasco.html"
