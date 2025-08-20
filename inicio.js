@@ -118,7 +118,7 @@ const climaDiv = document.getElementById("clima");
       if (valor) {
         const [lat, lon] = valor.split(",");
 
-        // Pedimos clima actual + pronóstico de 7 días
+        // Pedimos clima actual + pronóstico 
         const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=auto`;
 
         climaDiv.innerHTML = "Cargando clima...";
