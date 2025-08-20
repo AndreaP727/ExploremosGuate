@@ -1,12 +1,11 @@
-/* Navbar */
+/* Navbar base (PC/laptop) */
 .navbar-custom {
   background-color: #033f63 !important;
-  height: 56px;
+  height: 56px; /* fijo en pantallas grandes */
 }
 
-
 .logo-navbar {
-  height: 120px;
+  height: 120px; /* mantiene este tamaño en PC */
   object-fit: contain;
   margin-top: -12px;
   margin-bottom: -12px;
@@ -223,3 +222,43 @@ section {
       font-size: 14px;
       color: #333;
     }
+
+  
+/* Ajustes para tablets y móviles */
+@media (max-width: 1024px) {
+  .navbar-custom {
+    height: auto;
+    padding: 8px 12px;
+  }
+
+  .logo-navbar {
+    height: 80px; /* un poco más grande que móvil pequeño */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Ajustes para móviles pequeños (incluso girando) */
+@media (max-width: 768px) {
+  .navbar-custom {
+    height: auto; 
+    padding: 6px 8px;
+  }
+
+  .logo-navbar {
+    height: 60px;   /* logo más pequeño */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Asegurar que el menú se muestre correctamente en modo paisaje */
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #form-buscador {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
