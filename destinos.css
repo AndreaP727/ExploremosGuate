@@ -25,10 +25,13 @@ section {
 }
 
 .carousel {
-    display: block;
-    margin-left: 100px;
-    position: relative;
-    margin-bottom: 22px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 1000px; /* controla el ancho máximo en PC */
+
     
     > input {
         clip: rect(1px, 1px, 1px, 1px);
@@ -252,7 +255,6 @@ section {
     margin-bottom: 0;
   }
 
-  /* Asegurar que el menú se muestre correctamente en modo paisaje */
   .navbar-nav {
     flex-direction: column;
     width: 100%;
@@ -266,19 +268,26 @@ section {
 
 /* CAROUSEL RESPONSIVO*/
 /* Tablets y móviles */
-@media (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .carousel {
-    margin-left: 40px;  
-    margin-right: 40px; /
+    max-width: 100%;
   }
 }
 
-/* Móviles pequeños, incluso si giran el teléfono */
+
+@media (max-width: 1024px) {
+  .carousel {
+    margin-left: auto;   /* elimina el margen fijo */
+    margin-right: auto;  /* centra horizontalmente */
+    width: 70%;          /* que no se salga de la pantalla */
+  }
+}
+
+
 @media (max-width: 768px) {
   .carousel {
-    margin-left: auto;   
+    width: 100%;         /* ocupa todo el ancho en móviles */
+    margin-left: auto;
     margin-right: auto;
-    width: 90%;          
-    text-align: center;  
   }
 }
