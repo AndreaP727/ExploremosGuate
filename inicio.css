@@ -11,11 +11,22 @@
   margin-bottom: -12px; /* baja el logo */
 }
 
-img {
-    max-width: 100%;
-    display: block;
-  }
+/* Contenedor de la imagen principal */
+.imagen_principal {
+  width: 100%;
+  margin-top: 0; /* deja espacio debajo del navbar fijo */
+  overflow: hidden; /* evita desbordes */
+}
 
+/* Imagen principal: PC/laptop */
+.imagen_principal img {
+  width: 100%;        /* ocupa siempre todo el ancho */
+  height: auto;       /* mantiene proporción */
+  display: block;
+  object-fit: cover;  /* se adapta al contenedor */
+}
+
+/*Mapa de busqueda de destinos*/
 #mi_mapa {
     height: 650px;
     width: 900px;
@@ -61,4 +72,110 @@ img {
   margin: 8px 0;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/*NAVBAR RESPONSIVO*/
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  .navbar-custom {
+    height: auto;         /* altura automática */
+    padding: 8px 12px;    /* agrega respiro */
+  }
+
+  .logo-navbar {
+    height: 90px;         /* más chico que en PC */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* ===== Móviles ===== */
+@media (max-width: 768px) {
+  .navbar-custom {
+    height: auto; 
+    padding: 6px 8px;     /* más compacto */
+  }
+
+  .logo-navbar {
+    height: 70px;         /* logo se ajusta */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Si usas menú colapsable de Bootstrap */
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===== Móviles muy pequeños ===== */
+@media (max-width: 480px) {
+  .logo-navbar {
+    height: 55px;         /* logo más compacto aún */
+  }
+}
+
+/* IMAGEN PRINCIPAL RESPONSIVA */
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .imagen_principal img {
+    max-height: 600px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  .imagen_principal img {
+    max-height: 400px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .imagen_principal img {
+    max-height: 300px;
+  }
+}
+
+/* ===== Tablets ===== */
+@media (max-width: 1024px) {
+  #mi_mapa {
+    width: 100%;      /* ocupa todo el ancho disponible */
+    height: 500px;    /* un poco más bajo */
+  }
+
+  .titulo_mapa h2 {
+    font-size: 36px;  /* más compacto */
+  }
+}
+
+/* EL MAPA RESPONSIVO*/
+/* ===== Móviles ===== */
+@media (max-width: 768px) {
+  #mi_mapa {
+    width: 100%;     /* siempre al ancho completo */
+    height: 400px;   /* se adapta a pantallas más pequeñas */
+  }
+
+  .titulo_mapa h2 {
+    font-size: 28px; /* más pequeño para que no se corte */
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+/* ===== Móviles muy pequeños ===== */
+@media (max-width: 480px) {
+  #mi_mapa {
+    width: 100%;
+    height: 300px;   /* más compacto aún */
+  }
+
+  .titulo_mapa h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
