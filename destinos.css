@@ -279,7 +279,7 @@ section {
   .carousel {
     margin-left: auto;   /* elimina el margen fijo */
     margin-right: auto;  /* centra horizontalmente */
-    width: 70%;          /* que no se salga de la pantalla */
+    width: 60%;          /* que no se salga de la pantalla */
   }
 }
 
