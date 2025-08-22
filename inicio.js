@@ -23,7 +23,7 @@ L.marker([16.640904863030187, -90.3698091010962]).addTo(map).bindPopup('Cráter 
 L.marker([15.5432271900959, -91.39539203770286 ]).addTo(map).bindPopup('Laguna Magdalena');
 L.marker([15.149897897933611,  -90.12406620415358]).addTo(map).bindPopup('Catarata de Chilasco');
 
-// Intentar obtener ubicación del usuario
+// Intentar obtener ubicación del usuario con Geolocation API
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
@@ -155,6 +155,7 @@ const climaDiv = document.getElementById("clima");
               ${pronosticoHTML}
             `;
           })
+          
           .catch(err => {
             climaDiv.innerText = "Error al obtener el clima.";
             console.error(err);
