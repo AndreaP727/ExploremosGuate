@@ -1,3 +1,5 @@
+    
+    
     document.querySelectorAll('.destino').forEach(destino => {
       const destinoId = destino.getAttribute("data-id");
       const stars = destino.querySelectorAll(".star");
